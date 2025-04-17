@@ -1,0 +1,63 @@
+.dialog-pane {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #454545;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 15px;
+}
+
+.title-bar {
+    -fx-background-color: #1e1e1e;
+    -fx-border-radius: 8 8 0 0;
+    -fx-background-radius: 8 8 0 0;
+}
+
+.title-close-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 3 7;
+}
+
+.title-close-button:hover {
+    -fx-background-color: #ff5555;
+    -fx-text-fill: white;
+}
+
+.title {
+    -fx-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.subtitle {
+    -fx-fill: #bbbbbb;
+    -fx-font-size: 12px;
+}
+
+.text {
+    -fx-fill: #dddddd;
+    -fx-font-size: 12px;
+}
+
+.copy-close-button {
+    -fx-background-color: #0078D7;
+    -fx-text-fill: white;
+    -fx-padding: 5px 15px;
+    -fx-border-radius: 3;
+}
+
+.copy-close-button:hover {
+    -fx-background-color: #005bb5;
+}
+
+.close-button {
+    -fx-background-color: #404040;
+    -fx-text-fill: white;
+    -fx-padding: 5px 15px;
+    -fx-border-radius: 3;
+}
+
+.close-button:hover {
+    -fx-background-color: #505050;
+}

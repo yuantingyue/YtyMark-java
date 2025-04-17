@@ -1,0 +1,151 @@
+@import url("fonts.css");
+
+
+.root {
+    -fx-background: #46494B;
+    -fx-control-inner-background: #46494B;
+    -fx-background-color: #46494B;
+    -fx-text-fill: #a9b7c6;
+}
+
+.root > .label {
+    -fx-text-fill: #a9b7c6;
+}
+
+/* 标题栏按钮基础样式 */
+.window-button, .window-button-close{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+
+/* 鼠标悬停时的高亮效果 */
+.window-button:hover{
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-cursor: hand; /* 让鼠标变成手型 */
+}
+
+/* 鼠标点击时的按压效果 */
+.window-button:pressed{
+    -fx-background-color: rgba(255, 255, 255, 0.4);
+}
+.window-button-close:hover {
+    -fx-background-color: rgba(255, 0, 0, 0.8);
+    -fx-cursor: hand; /* 让鼠标变成手型 */
+}
+
+.window-button-close:pressed{
+    -fx-background-color: rgba(255, 0, 0, 0.6);
+}
+
+.window-button-icon {
+    -fx-fill: white;
+}
+
+/* 标题栏背景 */
+.titleBar {
+    -fx-background-color: #46494B;
+}
+/* 标题文字 */
+.titleLabel {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+
+/* 文本区域 */
+.text-area {
+    -fx-control-inner-background: #3c3f41;
+    -fx-text-fill: #a9b7c6;
+    /*-fx-font-size: 14px;*/
+    -fx-font-family: "SourceHanSansSC-Regular";
+}
+
+/* 菜单栏 */
+.menu-bar {
+    -fx-background-color: #46494B;
+    -fx-cursor: default;
+    -fx-padding: 0px;
+}
+
+/* 菜单和菜单项 */
+.menu,
+.menu-item,
+.menu .context-menu  {
+    -fx-background-color: #46494B;
+    -fx-text-fill: #a9b7c6;
+    -fx-border-color: #46494B;  /* 让边框变成深色 */
+    -fx-border-width: 1px;
+}
+
+.menu > .label,
+.menu-item > .label  {
+    -fx-text-fill: #a9b7c6;
+}
+
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:focused,
+.menu-bar > .container > .menu-button:showing {
+    -fx-background: #555555;
+    -fx-background-color: -fx-background;
+}
+.menu-bar > .container > .menu-button:hover > .label,
+.menu-bar > .container > .menu-button:focused > .label,
+.menu-bar > .container > .menu-button:showing  > .label {
+    -fx-text-fill: white;
+}
+.menu-item:focused {
+     -fx-background: #555555;
+     -fx-background-color: -fx-background;
+     -fx-text-fill: white;
+}
+
+/* 分割面板 */
+.scroll-pane,
+.split-pane {
+    -fx-background-color: #3c3f41;
+}
+.scroll-pane:focused,
+.split-pane:focused {
+    -fx-background-color: #3c3f41;
+}
+.split-pane:horizontal > .split-pane-divider {
+    -fx-background-color: #46494B;
+    -fx-background-insets: 0, 0 1 0 1;
+}
+.split-pane:vertical > .split-pane-divider {
+    -fx-background-color: #46494B;
+    -fx-background-insets: 0, 1 0 1 0;
+}
+/*----------------tab--------------*/
+/* 修改TabPane的Pane区域背景颜色 */
+.tab-pane {
+    -fx-background-color: #46494B;
+    -fx-cursor: default;
+}
+/* 修改Tab的背景颜色 */
+.tab {
+    -fx-background-color: #46494B;
+}
+/* 修改顶栏的背景颜色 */
+.tab-pane>*.tab-header-area>*.tab-header-background
+{
+    -fx-background-color:  #46494B;
+}
+/* 修改Tab中文本的颜色 */
+.tab-label {
+    -fx-text-fill: #a9b7c6;
+}
+/* 子代选择器，Tab选中的时候选择其子元素tab-label */
+.tab:selected .tab-label {
+    -fx-text-fill: #ffffff;
+}
+/* tab选中时设置背景颜色 */
+.tab:selected {
+    -fx-background-color: #3c3f41;
+}
+/* Tab选中的时候选中其边框并修改样式 */
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-radius: 1px;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-color: #3c3f41;
+}

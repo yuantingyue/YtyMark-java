@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'SourceHanSansSC-Regular';
+    src: url('%s');
+}
+
+@font-face {
+    font-family: 'SourceHanSansSC-Bold';
+    src: url('%s');
+}
+

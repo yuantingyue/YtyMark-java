@@ -1,0 +1,68 @@
+.dialog-pane {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #454545;
+    -fx-padding: 5px;
+}
+
+.close-icon {
+    -fx-fill: white;
+}
+
+.title-close-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 3 7;
+}
+
+.title-close-button:hover {
+    -fx-background-color: #ff5555;
+    -fx-text-fill: white;
+}
+
+.titleLabel {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 5px;
+    -fx-spacing: 10px;
+}
+
+.close-button {
+    -fx-background-color: #404040;
+    -fx-text-fill: white;
+    -fx-padding: 5px 15px;
+    -fx-border-radius: 3;
+}
+
+.close-button:hover {
+    -fx-background-color: #505050;
+}
+
+
+/*About弹窗的样式*/
+.about-title {
+    -fx-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.subtitle {
+    -fx-fill: #bbbbbb;
+    -fx-font-size: 12px;
+}
+
+.text {
+    -fx-fill: #dddddd;
+    -fx-font-size: 12px;
+    -fx-padding: 10 0 0 0;  /* 上 右 下 左 */
+}
+
+.link-text {
+    -fx-underline: true; /* 添加下划线 */
+    -fx-font-size: 12px;
+    -fx-cursor: hand; /* 鼠标变手型，像超链接 */
+}
+
+.link-text:hover {
+    -fx-border-color: #4ea1f3;
+}
