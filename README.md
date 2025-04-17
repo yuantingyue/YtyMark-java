@@ -160,17 +160,14 @@ java -jar ytyedit-mark-0.0.1.jar
 ## 📚 示例代码片段
 
 ```java
-// 使用责任链模式解析 Markdown 元素
-public class HeadingParser extends MarkdownParser {
-    @Override
-    public boolean parse(String line, ASTBuilder builder) {
-        if (line.startsWith("#")) {
-            builder.addNode(new HeadingNode(line));
-            return true;
-        }
-        return next(line, builder); // 传递给下一个处理器
-    }
-}
+// ytymark模块，对Markdown 文本解析和渲染，测试类中也有相关代码。
+
+Parser parser = ParserBuilder.builder().build();
+Renderer renderer = RendererBuilder.builder().build(HtmlRenderer.class);
+Node root = parser.parse(markdown);
+String html = renderer.processRender(root);
+System.out.println(html);
+
 ```
 
 ---
