@@ -1,4 +1,27 @@
-# 📝 YtyMark-java
+# YtyMark-java
+
+<p align="center">
+    <a href="https://github.com/yuantingyue/" target="_blank">
+        <img src="https://images.cnblogs.com/cnblogs_com/dennyLee2025/2111134/o_220219051103_logo.png" width="300px"/>
+    </a>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/github/stars/yuantingyue/YtyMark-java" alt="stars"/>
+  <img src="https://img.shields.io/github/forks/yuantingyue/YtyMark-java" alt="forks"/>
+  <img src="https://img.shields.io/github/issues/yuantingyue/YtyMark-java" alt="issues"/>
+</p>
+
+
+
+## 📝说明文档目录
+
+> [项目介绍](#-项目简介)
+>
+> [1：项目的整体总结](./doc/1：项目的整体总结.md)
+>
+> [2：核心功能（解析和渲染）](./doc/2：核心功能（解析和渲染）.md)
+>
+> [3：界面UI相关功能](./doc/3：界面UI相关功能.md)
 
 ## ✏️ 项目简介
 
@@ -53,6 +76,8 @@
 - **工厂模式**：**样式的创建**通过工厂模式来完成。
 
 - **观察者模式**：识别到主题发生变化时执行**重新渲染**操作；样式切换后，渲染的文字样式也需要同步调整，再结合监听器（观察者模式）来实现主题变化后重新渲染文本内容，除此之外JavaFX使用了大量的监听器。
+
+- **单例模式**，主题管理器全局唯一，并提供统一访问入口。
 
 - **装饰模式**：对自定义基础弹框做**定制化的扩展**，实现不同场景所需的弹框。
 

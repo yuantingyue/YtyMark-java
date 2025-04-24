@@ -24,7 +24,7 @@ public class NodeIterator implements Iterator<Node> {
     @Override
     public Node next() {
         Node node = currentNode;
-        // 递归遍历子节点
+        // 获取下一节点
         currentNode = currentNode.getNext();
         return node;
     }

@@ -66,12 +66,6 @@ public class HtmlRenderer extends AbstractRenderer {
         sbHTML.append("</blockquote>\n");
     }
 
-//    @Override
-//    public void render(ListBlockNode listBlockNode) {
-//        sbHTML.append("<ul>\n");
-//        renderChildren(listBlockNode);
-//        sbHTML.append("</ul>\n");
-//    }
 
     @Override
     public void render(ListItemNode listItemNode) {
