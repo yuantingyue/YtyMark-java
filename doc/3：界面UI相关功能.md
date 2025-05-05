@@ -339,11 +339,11 @@ public class UndoRedoCaretaker {
 
 ### 白天模式的截图：
 
-![](..\image\白天模式.jpg)
+![](../image/白天模式.jpg)
 
 ### 夜间模式的截图：
 
-![](..\image\黑夜模式.jpg)
+![](../image/黑夜模式.jpg)
 
 ## ✏️4. 总结
 
